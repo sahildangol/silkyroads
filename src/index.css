@@ -42,30 +42,38 @@ nav {
   grid-template-columns: repeat(3, 1fr);
   align-items: center;
 
-  background-color: var(--clr-bunker);
+  background-color: rgb(235, 228, 228);
 }
 
 .nav__brand {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: rgb(235, 228, 228);
 }
 
 .nav__brand img {
   max-width: 125px;
   height: auto;
+  background-color: rgb(235, 228, 228);
 }
 
 .nav__brand h1 {
-  color: var(--clr-white);
-  font-family: "Lalezar";
-  font-size: 2.5em;
+  margin: 0;
+  font-size: 3rem;
+}
+
+.nav__brand p {
+  margin: 0;
+  font-size: 1rem;
+  
 }
 
 .nav__links {
-  background-color: var(--clr-ebony-clay);
+  background-color: rgb(235, 228, 228);
   grid-column: 1 / span 3;
-
+  color: green;
   padding: 10px;
 
   display: flex;
@@ -77,11 +85,12 @@ nav {
 
 .nav__links li {
   margin: 0 15px;
+  color: green;
 }
 
 .nav__links li a {
   text-decoration: none;
-  color: var(--clr-white);
+  color: green;
 }
 
 .nav__links li a:hover {
@@ -92,7 +101,10 @@ nav {
   padding: 10px;
   border-radius: 6px;
   min-width: 50%;
+
+  
 }
+
 
 .nav__search:hover {
   outline: 1px solid var(--clr-orange);
@@ -102,7 +114,7 @@ nav {
   width: 150px;
   height: 40px;
   margin: 0 auto;
-
+  justify-content: center;
   background-color: var(--clr-orange);
   color: var(--clr-black);
 
@@ -115,6 +127,7 @@ nav {
 
   cursor: pointer;
   transition: all 250ms ease;
+  background-color: rgb(10, 188, 52);
 }
 
 .nav__connect:hover {
